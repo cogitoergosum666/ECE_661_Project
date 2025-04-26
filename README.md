@@ -20,6 +20,7 @@ This project explores the use of **Group Relative Policy Optimization (GRPO)** t
 - `Eval_Phi14b/`: Reference evaluation using a Phi-14B model for comparison.
 - `README.md`: This file.
 - `LICENSE`: MIT License.
+- `final poster`: poster for more information.
 
 ---
 
