@@ -25,15 +25,15 @@ This project explores the use of **Group Relative Policy Optimization (GRPO)** t
 
 ### 🛠 Environment & Dependencies
 
-You can reproduce our experiments using the following stack:
+You can reproduce our experiments using the following stack(to use unsloth you must use Linux env):
 
 ```bash
 conda create -n grpo_qwen python=3.10
 conda activate grpo_qwen
 
 pip install torch transformers accelerate datasets
-pip install peft unsloth bitsandbytes
-
+pip install peft unsloth vllm
+```
 
 ### 📄 Citation
 If you find this work helpful, please cite the poster:
