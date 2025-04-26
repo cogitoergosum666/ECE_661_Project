@@ -1,1 +1,3 @@
-
+This Colab notebook provides a step-by-step guide for fine-tuning the Qwen2.5-3B model on the SQuAD dataset using GRPO (Grouped Reinforcement Policy Optimization).
+For the improvement:
+Readers can compare the effectiveness of different reward strategies and implement custom reward functions to improve model accuracy after fine-tuning.
