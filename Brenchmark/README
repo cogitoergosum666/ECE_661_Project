@@ -1,1 +1,32 @@
+This folder contains evaluation scripts for assessing model performance on reasoning benchmarks after GRPO fine-tuning.
+
+Benchmarks
+MMLU: Multiple-choice factual and deductive reasoning evaluation.
+
+SVAMP: Open-ended multi-step arithmetic reasoning evaluation.
+
+Evaluation Settings
+All benchmarks use standardized decoding configurations:
+
+max_tokens = 1024
+
+temperature = 0.0
+
+top_p = 1.0
+
+Greedy decoding without sampling
+
+For models with chain-of-thought (CoT) reasoning, outputs are required to be enclosed within:
+<reasoning>...</reasoning> <answer>...</answer>
+Key Evaluation Functions
+MMLU & SVAMP:
+
+Parse model outputs using <answer> tags.
+
+Compare extracted answers against ground truth via exact match.
+
+Metrics: Accuracy (%).
+Result Logging
+All evaluation results are systematically logged in CSV files with columns:
+question, choices/context, ground truth, model output, prediction, reasoning trace, correctness
 
